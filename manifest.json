@@ -1,0 +1,21 @@
+{
+  "name": "Karya Mas Company",
+  "short_name": "Karya Mas",
+  "description": "Pintu & Kusen Jati Laminated Perhutani Berkualitas",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0f0e0d",
+  "theme_color": "#C8951A",
+  "icons": [
+    {
+      "src": "assets/logo-cp-mas.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "assets/logo-cp-mas.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
