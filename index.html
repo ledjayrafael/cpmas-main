@@ -52,13 +52,16 @@
             </div>
         </div>
         <ul class="nav-links">
-            <li><a href="#hero">Beranda</a></li>
-            <li><a href="#products">Produk</a></li>
-            <li><a href="#why">Keunggulan</a></li>
-            <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#hero" data-i18n="nav.home">Beranda</a></li>
+            <li><a href="#products" data-i18n="nav.products">Produk</a></li>
+            <li><a href="#why" data-i18n="nav.why">Keunggulan</a></li>
+            <li><a href="#gallery" data-i18n="nav.gallery">Galeri</a></li>
             <li><a href="#faq">FAQ</a></li>
         </ul>
-        <a href="#cta-final" class="nav-cta">Konsultasi Gratis</a>
+        <div class="nav-right">
+            <button class="lang-toggle" id="langToggle" aria-label="Switch language"><span aria-hidden="true">🇬🇧</span> EN</button>
+            <a href="#cta-final" class="nav-cta" data-i18n="nav.cta">Konsultasi Gratis</a>
+        </div>
         <div class="nav-burger" id="burger">
             <span></span><span></span><span></span>
         </div>
@@ -66,11 +69,12 @@
 
     <!-- MOBILE NAV -->
     <div class="nav-mobile" id="mobile-nav">
-        <a href="#hero" class="mobile-link">Beranda</a>
-        <a href="#products" class="mobile-link">Produk</a>
-        <a href="#why" class="mobile-link">Keunggulan</a>
-        <a href="#gallery" class="mobile-link">Galeri</a>
+        <a href="#hero" class="mobile-link" data-i18n="nav.home">Beranda</a>
+        <a href="#products" class="mobile-link" data-i18n="nav.products">Produk</a>
+        <a href="#why" class="mobile-link" data-i18n="nav.why">Keunggulan</a>
+        <a href="#gallery" class="mobile-link" data-i18n="nav.gallery">Galeri</a>
         <a href="#faq" class="mobile-link">FAQ</a>
+        <button class="lang-toggle lang-toggle-mobile" id="langToggleMobile" aria-label="Switch language"><span aria-hidden="true">🇬🇧</span> EN</button>
     </div>
 
     <!-- HERO SECTION -->
@@ -82,20 +86,20 @@
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content container">
-            <div class="hero-tag aos">Premium Quality Furniture</div>
-            <h1 class="hero-title aos" style="transition-delay: 0.1s;">
+            <div class="hero-tag aos" data-i18n="hero.tag">Premium Quality Furniture</div>
+            <h1 class="hero-title aos" style="transition-delay: 0.1s;" data-i18n="hero.title">
                 Pintu & Kusen serta Furniture Jati Perhutani <span>Berkualitas</span> untuk Rumah Anda
             </h1>
-            <p class="hero-sub aos" style="transition-delay: 0.2s;">
+            <p class="hero-sub aos" style="transition-delay: 0.2s;" data-i18n="hero.sub">
                 Custom ukuran, kuat, tahan lama dan terpercaya. Wujudkan rumah impian dengan
                 sentuhan kayu jati asli yang elegan.
             </p>
             <ul class="hero-bullets aos" style="transition-delay: 0.3s;">
-                <li>Kayu Jati Solid dan Laminated Berkualitas (Resmi PERHUTANI)</li>
-                <li>Kayu Bengkirai, Merbau, Kruing, Kamper, Meranti, Ulin</li>
-                <li>Kayu Lokal Mahoni, Gambelina lain lain</li>
-                <li>Berpengalaman Sejak Tahun 1990</li>
-                <li>Pabrik Langsung di Banyuwangi</li>
+                <li data-i18n="hero.b1">Kayu Jati Solid dan Laminated Berkualitas (Resmi PERHUTANI)</li>
+                <li data-i18n="hero.b2">Kayu Bengkirai, Merbau, Kruing, Kamper, Meranti, Ulin</li>
+                <li data-i18n="hero.b3">Kayu Lokal Mahoni, Gambelina lain lain</li>
+                <li data-i18n="hero.b4">Berpengalaman Sejak Tahun 1990</li>
+                <li data-i18n="hero.b5">Pabrik Langsung di Banyuwangi</li>
             </ul>
             <div class="hero-btns aos" style="transition-delay: 0.4s;">
                 <a href="https://wa.me/62811359671" target="_blank" class="btn-primary">
@@ -103,9 +107,9 @@
                         <path
                             d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                     </svg>
-                    Konsultasi & Order Sekarang
+                    <span data-i18n="hero.btn1">Konsultasi & Order Sekarang</span>
                 </a>
-                <a href="#products" class="btn-secondary">Lihat Koleksi</a>
+                <a href="#products" class="btn-secondary" data-i18n="hero.btn2">Lihat Koleksi</a>
             </div>
         </div>
         <div class="hero-indicators" id="indicators">
@@ -124,9 +128,9 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-content aos aos-left">
-                    <div class="section-tag">Profil Perusahaan</div>
+                    <div class="section-tag" data-i18n="about.tag">Profil Perusahaan</div>
                     <h2 class="section-title">Central Pintu Mas</h2>
-                    <p class="about-lead">Central Pintu Mas (CPM) berlokasi di Banyuwangi, Jawa Timur, Indonesia. Kami
+                    <p class="about-lead" data-i18n="about.lead">Central Pintu Mas (CPM) berlokasi di Banyuwangi, Jawa Timur, Indonesia. Kami
                         telah berpengalaman sejak tahun 1990 dalam memproduksi komponen perumahan. Kualitas produk kami
                         adalah prioritas utama demi memuaskan pelanggan.</p>
 
@@ -135,16 +139,16 @@
                         <div class="about-feature">
                             <div class="af-icon">🌲</div>
                             <div>
-                                <h4>Sumber Bahan Baku Resmi</h4>
-                                <p>Kami memperoleh bahan baku secara resmi dari pemerintah, yaitu melalui PERHUTANI
+                                <h4 data-i18n="about.f1.title">Sumber Bahan Baku Resmi</h4>
+                                <p data-i18n="about.f1.text">Kami memperoleh bahan baku secara resmi dari pemerintah, yaitu melalui PERHUTANI
                                     (Departemen Kehutanan Indonesia).</p>
                             </div>
                         </div>
                         <div class="about-feature">
                             <div class="af-icon">🤝</div>
                             <div>
-                                <h4>Manajemen Independen</h4>
-                                <p>Dikelola secara profesional dan terpisah dari grup lain, menjamin fokus penuh pada
+                                <h4 data-i18n="about.f2.title">Manajemen Independen</h4>
+                                <p data-i18n="about.f2.text">Dikelola secara profesional dan terpisah dari grup lain, menjamin fokus penuh pada
                                     kualitas dan kepuasan pelanggan CPM.</p>
                             </div>
                         </div>
@@ -153,15 +157,15 @@
 
                 <div class="about-products aos aos-right">
                     <div class="ap-card">
-                        <h3>Produk Kami</h3>
-                        <p>Kami menawarkan berbagai macam produk kayu berkualitas, antara lain:</p>
+                        <h3 data-i18n="about.prod.h3">Produk Kami</h3>
+                        <p data-i18n="about.prod.p">Kami menawarkan berbagai macam produk kayu berkualitas, antara lain:</p>
                         <ul class="ap-list">
-                            <li>Papan Laminasi Jati <span>(Teak Laminate board)</span></li>
-                            <li>Pintu & Kusen Pintu <span>(Door & Door Frame)</span></li>
-                            <li>Lantai Laminasi Jati <span>(Teak Laminate flooring)</span></li>
-                            <li>Lantai Solid (Flooring) & Decking <span>baik jati atau Non Jati (Customise)</span></li>
+                            <li data-i18n="about.prod.l1">Papan Laminasi Jati <span>(Teak Laminate board)</span></li>
+                            <li data-i18n="about.prod.l2">Pintu & Kusen Pintu <span>(Door & Door Frame)</span></li>
+                            <li data-i18n="about.prod.l3">Lantai Laminasi Jati <span>(Teak Laminate flooring)</span></li>
+                            <li data-i18n="about.prod.l4">Lantai Solid (Flooring) & Decking <span>baik jati atau Non Jati (Customise)</span></li>
                         </ul>
-                        <div class="ap-note">
+                        <div class="ap-note" data-i18n="about.prod.note">
                             Selain produk standar, kami juga menerima pesanan khusus <strong>(custom-made)</strong>
                             sesuai dengan ukuran dan ekspektasi pelanggan.
                         </div>
@@ -180,41 +184,41 @@
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg> Pengrajin Berpengalaman</div>
+                </svg> <span data-i18n="trust.1">Pengrajin Berpengalaman</span></div>
             <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg> Bahan Baku Resmi PERHUTANI</div>
+                </svg> <span data-i18n="trust.2">Bahan Baku Resmi PERHUTANI</span></div>
             <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg> Pengerjaan Rapi & Presisi</div>
+                </svg> <span data-i18n="trust.3">Pengerjaan Rapi & Presisi</span></div>
             <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M20 6L9 17l-5-5"></path>
-                </svg> Berpengalaman Sejak 1990</div>
+                </svg> <span data-i18n="trust.4">Berpengalaman Sejak 1990</span></div>
             <!-- Duplicates for marquee effect -->
             <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg> Pengrajin Berpengalaman</div>
+                </svg> <span data-i18n="trust.1">Pengrajin Berpengalaman</span></div>
             <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg> Bahan Baku Resmi PERHUTANI</div>
+                </svg> <span data-i18n="trust.2">Bahan Baku Resmi PERHUTANI</span></div>
             <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg> Pengerjaan Rapi & Presisi</div>
+                </svg> <span data-i18n="trust.3">Pengerjaan Rapi & Presisi</span></div>
             <div class="trust-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M20 6L9 17l-5-5"></path>
-                </svg> Berpengalaman Sejak 1990</div>
+                </svg> <span data-i18n="trust.4">Berpengalaman Sejak 1990</span></div>
         </div>
     </section>
 
@@ -222,9 +226,9 @@
     <section id="products" class="section">
         <div class="container">
             <div class="text-center aos">
-                <div class="section-tag">Produk Unggulan</div>
-                <h2 class="section-title">Koleksi Pintu & Kusen</h2>
-                <p class="section-sub">Berbagai pilihan produk kayu jati laminated berkualitas tinggi dengan ukuran
+                <div class="section-tag" data-i18n="products.tag">Produk Unggulan</div>
+                <h2 class="section-title" data-i18n="products.title">Koleksi Pintu & Kusen</h2>
+                <p class="section-sub" data-i18n="products.sub">Berbagai pilihan produk kayu jati laminated berkualitas tinggi dengan ukuran
                     standar maupun custom.</p>
             </div>
 
@@ -235,8 +239,8 @@
                         <div class="product-badge">Best Seller</div>
                     </div>
                     <div class="product-body">
-                        <h3>Pintu Jati Laminated</h3>
-                        <p>Pintu utama atau kamar dengan material 100% jati laminated yang stabil dan anti melengkung.
+                        <h3 data-i18n="prod.1.name">Pintu Jati Laminated</h3>
+                        <p data-i18n="prod.1.desc">Pintu utama atau kamar dengan material 100% jati laminated yang stabil dan anti melengkung.
                         </p>
                         <div class="product-specs">
                             <span class="spec-tag">Tebal: 4-5 cm</span>
@@ -250,8 +254,8 @@
                         <img src="assets/hero5.webp" alt="Kitchen Set" loading="lazy">
                     </div>
                     <div class="product-body">
-                        <h3>Kitchen Set</h3>
-                        <p>Desain dapur fungsional dan elegan dengan material berkualitas tinggi yang tahan lama.</p>
+                        <h3 data-i18n="prod.2.name">Kitchen Set</h3>
+                        <p data-i18n="prod.2.desc">Desain dapur fungsional dan elegan dengan material berkualitas tinggi yang tahan lama.</p>
                         <div class="product-specs">
                             <span class="spec-tag">Customise</span>
                         </div>
@@ -263,8 +267,8 @@
                         <img src="assets/hero6.webp" alt="Trap Tangga dan Bordez" loading="lazy">
                     </div>
                     <div class="product-body">
-                        <h3>Trap Tangga dan Bordez</h3>
-                        <p>Elemen tangga yang kokoh dan artistik, menambah kemewahan interior rumah Anda.</p>
+                        <h3 data-i18n="prod.3.name">Trap Tangga dan Bordez</h3>
+                        <p data-i18n="prod.3.desc">Elemen tangga yang kokoh dan artistik, menambah kemewahan interior rumah Anda.</p>
                         <div class="product-specs">
                             <span class="spec-tag">Customise</span>
                         </div>
@@ -276,8 +280,8 @@
                         <img src="assets/hero7.webp" alt="Bed Set" loading="lazy">
                     </div>
                     <div class="product-body">
-                        <h3>Bed Set</h3>
-                        <p>Kenyamanan istirahat maksimal dengan ranjang dan perabot kamar tidur eksklusif.</p>
+                        <h3 data-i18n="prod.4.name">Bed Set</h3>
+                        <p data-i18n="prod.4.desc">Kenyamanan istirahat maksimal dengan ranjang dan perabot kamar tidur eksklusif.</p>
                         <div class="product-specs">
                             <span class="spec-tag">Customise</span>
                         </div>
@@ -291,16 +295,16 @@
     <section id="sizes" class="section">
         <div class="container">
             <div class="text-center aos">
-                <div class="section-tag">Spesifikasi Detail</div>
-                <h2 class="section-title">Standar Ukuran Kami</h2>
-                <p class="section-sub">Kami menyediakan berbagai ukuran standar maupun custom (hingga tinggi 280 CM).
+                <div class="section-tag" data-i18n="sizes.tag">Spesifikasi Detail</div>
+                <h2 class="section-title" data-i18n="sizes.title">Standar Ukuran Kami</h2>
+                <p class="section-sub" data-i18n="sizes.sub">Kami menyediakan berbagai ukuran standar maupun custom (hingga tinggi 280 CM).
                     Semua menggunakan jenis kayu Teak Solid & Laminated Door / Pintu Laminated Jati.</p>
             </div>
 
             <div class="sizes-grid">
                 <div class="size-card aos">
                     <div class="size-icon">🚪</div>
-                    <h3>Uk. Pintu</h3>
+                    <h3 data-i18n="sizes.c1">Uk. Pintu</h3>
                     <ul>
                         <li>4 CM x 60 CM x 210 Up To Max. 280 CM</li>
                         <li>4 CM x 70 CM x 210 Up To Max. 280 CM</li>
@@ -311,7 +315,7 @@
 
                 <div class="size-card aos" style="transition-delay: 0.1s;">
                     <div class="size-icon">🪟</div>
-                    <h3>Uk. Kusen Pintu <br><small>(Door Jamb)</small></h3>
+                    <h3><span data-i18n="sizes.c2">Uk. Kusen Pintu</span> <br><small>(Door Jamb)</small></h3>
                     <ul>
                         <li>(5 x 15) x 60 CM x 210 Up To Max. 280 CM</li>
                         <li>(5 x 15) x 70 CM x 210 Up To Max. 280 CM</li>
@@ -322,7 +326,7 @@
 
                 <div class="size-card aos" style="transition-delay: 0.2s;">
                     <div class="size-icon">🪟</div>
-                    <h3>Uk. Daun Jendela</h3>
+                    <h3 data-i18n="sizes.c3">Uk. Daun Jendela</h3>
                     <ul>
                         <li>(3 x 8) / (4 x 8) As Requested x 60 CM x 210 Up To Max. 280 CM</li>
                         <li>(3 x 8) / (4 x 8) As Requested x 70 CM x 210 Up To Max. 280 CM</li>
@@ -333,7 +337,7 @@
 
                 <div class="size-card aos" style="transition-delay: 0.3s;">
                     <div class="size-icon">🪟</div>
-                    <h3>Uk. Kusen Jendela <br><small>(Window Jamb)</small></h3>
+                    <h3><span data-i18n="sizes.c4">Uk. Kusen Jendela</span> <br><small>(Window Jamb)</small></h3>
                     <ul>
                         <li>(5 x 15) As Requested x 60 CM x 210 Up To Max. 280 CM</li>
                         <li>(5 x 15) As Requested x 70 CM x 210 Up To Max. 280 CM</li>
@@ -343,7 +347,7 @@
                 </div>
             </div>
 
-            <div class="material-note aos">
+            <div class="material-note aos" data-i18n="sizes.mat">
                 <strong>Jenis Kayu:</strong> Teak Solid / Teak Laminated Door / Pintu Laminated Jati
             </div>
         </div>
@@ -354,9 +358,9 @@
         <div class="container">
             <!-- Header -->
             <div class="text-center aos">
-                <div class="section-tag">Produk Khusus</div>
-                <h2 class="section-title">CP Mas Furniture | Flooring Jati</h2>
-                <p class="section-sub">Solusi premium untuk lantai kayu solid dan laminated dengan tekstur alami yang
+                <div class="section-tag" data-i18n="flooring.tag">Produk Khusus</div>
+                <h2 class="section-title" data-i18n="flooring.title">CP Mas Furniture | Flooring Jati</h2>
+                <p class="section-sub" data-i18n="flooring.sub">Solusi premium untuk lantai kayu solid dan laminated dengan tekstur alami yang
                     menawan untuk hunian Anda.</p>
             </div>
 
@@ -365,7 +369,7 @@
 
                 <!-- Col 1: Texture Preview (circles) -->
                 <div class="flooring-col aos aos-left">
-                    <h3 class="flooring-col-title">Preview Tekstur</h3>
+                    <h3 class="flooring-col-title" data-i18n="flooring.preview">Preview Tekstur</h3>
                     <div class="texture-circles">
                         <div class="texture-circle-wrap">
                             <div class="texture-circle">
@@ -390,7 +394,7 @@
 
                 <!-- Col 2: Specifications -->
                 <div class="flooring-col aos">
-                    <h3 class="flooring-col-title">Spesifikasi Produk</h3>
+                    <h3 class="flooring-col-title" data-i18n="flooring.spec">Spesifikasi Produk</h3>
                     <div class="flooring-spec-block">
                         <div class="flooring-spec-group">
                             <h4>🪵 Teak Flooring Laminated <em>(Jati)</em></h4>
@@ -420,7 +424,7 @@
 
                 <!-- Col 3: Videos -->
                 <div class="flooring-col aos aos-right">
-                    <h3 class="flooring-col-title">Video Preview</h3>
+                    <h3 class="flooring-col-title" data-i18n="flooring.video">Video Preview</h3>
                     <div class="flooring-videos">
                         <div class="video-card">
                             <div class="video-wrapper">
@@ -506,7 +510,7 @@
 
             <!-- Row 3: Interior Slideshow -->
             <div class="aos">
-                <h3 class="flooring-col-title text-center" style="margin-bottom:2rem;">Inspirasi Interior</h3>
+                <h3 class="flooring-col-title text-center" style="margin-bottom:2rem;" data-i18n="flooring.interior">Inspirasi Interior</h3>
                 <div class="interior-slideshow" id="interiorSlideshow">
                     <div class="interior-slide active">
                         <img src="assets/interior-flooring1.webp" alt="Inspirasi Interior 1" loading="lazy">
@@ -533,9 +537,9 @@
     <section id="why" class="section">
         <div class="container">
             <div class="text-center aos">
-                <div class="section-tag">Kenapa Memilih Kami</div>
-                <h2 class="section-title">Solusi Pintu Terbaik untuk Anda</h2>
-                <p class="section-sub">Kami memahami masalah umum pada Pintu, Kusen dan furnitur kayu dan memberikan
+                <div class="section-tag" data-i18n="why.tag">Kenapa Memilih Kami</div>
+                <h2 class="section-title" data-i18n="why.title">Solusi Pintu Terbaik untuk Anda</h2>
+                <p class="section-sub" data-i18n="why.sub">Kami memahami masalah umum pada Pintu, Kusen dan furnitur kayu dan memberikan
                     solusi nyata lewat produk jati laminated maupun Solid.</p>
             </div>
 
@@ -543,8 +547,8 @@
                 <div class="why-card aos">
                     <div class="why-icon">🪵</div>
                     <div>
-                        <h4>Material Lebih Stabil</h4>
-                        <p>Menggunakan teknik Jati Laminated yang terbukti jauh lebih stabil, menekan risiko memuai,
+                        <h4 data-i18n="why.1.title">Material Lebih Stabil</h4>
+                        <p data-i18n="why.1.text">Menggunakan teknik Jati Laminated yang terbukti jauh lebih stabil, menekan risiko memuai,
                             menyusut, atau melengkung dibanding kayu solid biasa.</p>
                     </div>
                 </div>
@@ -552,8 +556,8 @@
                 <div class="why-card aos" style="transition-delay: 0.1s;">
                     <div class="why-icon">📏</div>
                     <div>
-                        <h4>Custom Fleksibel</h4>
-                        <p>Tiap rumah itu unik. Kami melayani pembuatan dengan ukuran, desain, dan finishing yang
+                        <h4 data-i18n="why.2.title">Custom Fleksibel</h4>
+                        <p data-i18n="why.2.text">Tiap rumah itu unik. Kami melayani pembuatan dengan ukuran, desain, dan finishing yang
                             disesuaikan persis dengan kebutuhan proyek Anda.</p>
                     </div>
                 </div>
@@ -561,8 +565,8 @@
                 <div class="why-card aos">
                     <div class="why-icon">💰</div>
                     <div>
-                        <h4>Harga Langsung Distributor</h4>
-                        <p>Tanpa perantara toko. Anda mendapatkan harga tangan pertama dari workshop kami dengan
+                        <h4 data-i18n="why.3.title">Harga Langsung Distributor</h4>
+                        <p data-i18n="why.3.text">Tanpa perantara toko. Anda mendapatkan harga tangan pertama dari workshop kami dengan
                             kualitas yang setara atau lebih baik dari produk premium di pasaran.</p>
                     </div>
                 </div>
@@ -570,8 +574,8 @@
                 <div class="why-card aos" style="transition-delay: 0.1s;">
                     <div class="why-icon">🛠️</div>
                     <div>
-                        <h4>Pengerjaan Presisi</h4>
-                        <p>Dikerjakan dengan System Machinal oleh Tenaga yang berpengalaman tinggi, menghasilkan detail
+                        <h4 data-i18n="why.4.title">Pengerjaan Presisi</h4>
+                        <p data-i18n="why.4.text">Dikerjakan dengan System Machinal oleh Tenaga yang berpengalaman tinggi, menghasilkan detail
                             pengerjaan yang rapi, berkelas dan awet untuk jangka panjang.</p>
                     </div>
                 </div>
@@ -585,11 +589,11 @@
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
                         </svg>
-                        Pintu kayu biasa cepat melengkung / susut
+                        <span data-i18n="ps.bad1">Pintu kayu biasa cepat melengkung / susut</span>
                     </div>
                     <div class="ps-arrow">→</div>
                     <div class="ps-good">
-                        Kami gunakan Jati Laminated (Lebih stabil & tahan cuaca)
+                        <span data-i18n="ps.good1">Kami gunakan Jati Laminated (Lebih stabil & tahan cuaca)</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -605,11 +609,11 @@
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
                         </svg>
-                        Ukuran sering tidak pas dengan kusen eksisting
+                        <span data-i18n="ps.bad2">Ukuran sering tidak pas dengan kusen eksisting</span>
                     </div>
                     <div class="ps-arrow">→</div>
                     <div class="ps-good">
-                        Bisa custom ukuran presisi sesuai lubang kusen
+                        <span data-i18n="ps.good2">Bisa custom ukuran presisi sesuai lubang kusen</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -625,11 +629,11 @@
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
                         </svg>
-                        Harga di toko material terlalu mahal
+                        <span data-i18n="ps.bad3">Harga di toko material terlalu mahal</span>
                     </div>
                     <div class="ps-arrow">→</div>
                     <div class="ps-good">
-                        Pesan langsung dari workshop, hemat hingga 30%
+                        <span data-i18n="ps.good3">Pesan langsung dari workshop, hemat hingga 30%</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
@@ -645,34 +649,34 @@
     <section id="process" class="section">
         <div class="container">
             <div class="text-center aos">
-                <div class="section-tag">Cara Pesan</div>
-                <h2 class="section-title">Proses Pemesanan Mudah</h2>
+                <div class="section-tag" data-i18n="process.tag">Cara Pesan</div>
+                <h2 class="section-title" data-i18n="process.title">Proses Pemesanan Mudah</h2>
             </div>
 
             <div class="process-steps">
                 <div class="step aos">
                     <div class="step-num">1</div>
                     <span class="step-icon">💬</span>
-                    <h4>Konsultasi</h4>
-                    <p>Hubungi WhatsApp kami, diskusikan kebutuhan Anda.</p>
+                    <h4 data-i18n="step.1.title">Konsultasi</h4>
+                    <p data-i18n="step.1.text">Hubungi WhatsApp kami, diskusikan kebutuhan Anda.</p>
                 </div>
                 <div class="step aos" style="transition-delay: 0.1s;">
                     <div class="step-num">2</div>
                     <span class="step-icon">📐</span>
-                    <h4>Tentukan Ukuran</h4>
-                    <p>Pilih desain, tentukan ukuran, atau jadwalkan survei (S&K).</p>
+                    <h4 data-i18n="step.2.title">Tentukan Ukuran</h4>
+                    <p data-i18n="step.2.text">Pilih desain, tentukan ukuran, atau jadwalkan survei (S&K).</p>
                 </div>
                 <div class="step aos" style="transition-delay: 0.2s;">
                     <div class="step-num">3</div>
                     <span class="step-icon">🪚</span>
-                    <h4>Produksi</h4>
-                    <p>Tim pengrajin kami memproduksi pesanan dengan teliti.</p>
+                    <h4 data-i18n="step.3.title">Produksi</h4>
+                    <p data-i18n="step.3.text">Tim pengrajin kami memproduksi pesanan dengan teliti.</p>
                 </div>
                 <div class="step aos" style="transition-delay: 0.3s;">
                     <div class="step-num">4</div>
                     <span class="step-icon">🚚</span>
-                    <h4>Pengiriman</h4>
-                    <p>Produk dikirim ke lokasi Anda (dan opsi pemasangan).</p>
+                    <h4 data-i18n="step.4.title">Pengiriman</h4>
+                    <p data-i18n="step.4.text">Produk dikirim ke lokasi Anda (dan opsi pemasangan).</p>
                 </div>
             </div>
         </div>
@@ -682,9 +686,9 @@
     <section id="gallery" class="section">
         <div class="container">
             <div class="text-center aos">
-                <div class="section-tag">Portofolio</div>
-                <h2 class="section-title">Galeri Proyek Kami</h2>
-                <p class="section-sub">Lihat hasil pengerjaan pintu dan kusen kayu jati kami di berbagai proyek hunian.
+                <div class="section-tag" data-i18n="gallery.tag">Portofolio</div>
+                <h2 class="section-title" data-i18n="gallery.title">Galeri Proyek Kami</h2>
+                <p class="section-sub" data-i18n="gallery.sub">Lihat hasil pengerjaan pintu dan kusen kayu jati kami di berbagai proyek hunian.
                 </p>
             </div>
 
@@ -765,9 +769,9 @@
     <section id="video-featured" class="section">
         <div class="container">
             <div class="text-center aos">
-                <div class="section-tag">Eksklusif</div>
-                <h2 class="section-title">Lihat Lebih Dekat</h2>
-                <p class="section-sub">Melihat lebih dalam kualitas produk dan dedikasi kami dalam setiap detail
+                <div class="section-tag" data-i18n="vfeat.tag">Eksklusif</div>
+                <h2 class="section-title" data-i18n="vfeat.title">Lihat Lebih Dekat</h2>
+                <p class="section-sub" data-i18n="vfeat.sub">Melihat lebih dalam kualitas produk dan dedikasi kami dalam setiap detail
                     pengerjaan melalui video profil eksklusif.</p>
             </div>
             <div class="video-card featured aos">
@@ -776,19 +780,19 @@
                         <img src="https://i.ytimg.com/vi/8U7ECupmwas/maxresdefault.jpg" alt="Video Thumbnail"
                             loading="lazy">
                         <div class="play-btn">▶</div>
-                        <span class="video-label">Putar Video Profil</span>
+                        <span class="video-label" data-i18n="vfeat.label">Putar Video Profil</span>
                     </div>
                 </div>
                 <div class="video-caption">
                     <div class="video-caption-info">
                         <span class="video-caption-icon">▶</span>
                         <div>
-                            <h4>Video Profil CP-MAS</h4>
-                            <p>Kualitas &amp; Dedikasi dalam Setiap Detail Pengerjaan</p>
+                            <h4 data-i18n="vfeat.cap.h4">Video Profil CP-MAS</h4>
+                            <p data-i18n="vfeat.cap.p">Kualitas &amp; Dedikasi dalam Setiap Detail Pengerjaan</p>
                         </div>
                     </div>
                     <a href="https://www.youtube.com/watch?v=8U7ECupmwas" target="_blank" rel="noopener"
-                        class="video-caption-yt">Buka di YouTube ↗</a>
+                        class="video-caption-yt" data-i18n="vfeat.cap.yt">Buka di YouTube ↗</a>
                 </div>
             </div>
         </div>
@@ -798,9 +802,9 @@
     <section id="videos" class="section">
         <div class="container">
             <div class="text-center aos">
-                <div class="section-tag">Video Pendek</div>
-                <h2 class="section-title">Video Galeri</h2>
-                <p class="section-sub">Saksikan kualitas material dan proses pengerjaan kami lewat video singkat
+                <div class="section-tag" data-i18n="videos.tag">Video Pendek</div>
+                <h2 class="section-title" data-i18n="videos.title">Video Galeri</h2>
+                <p class="section-sub" data-i18n="videos.sub">Saksikan kualitas material dan proses pengerjaan kami lewat video singkat
                     berikut.</p>
             </div>
 
@@ -933,46 +937,46 @@
     <section id="testimonials" class="section">
         <div class="container">
             <div class="text-center aos">
-                <div class="section-tag">Ulasan</div>
-                <h2 class="section-title">Pilar Cover</h2>
+                <div class="section-tag" data-i18n="testi.tag">Ulasan</div>
+                <h2 class="section-title" data-i18n="testi.title">Pilar Cover</h2>
             </div>
 
             <div class="testi-grid">
                 <div class="testi-card aos">
                     <div class="testi-stars">★★★★★</div>
-                    <p class="testi-text">"Kualitas pintunya bagus banget, berat dan solid. Pemasangan juga rapi. Sangat
+                    <p class="testi-text" data-i18n="testi.1.text">"Kualitas pintunya bagus banget, berat dan solid. Pemasangan juga rapi. Sangat
                         puas dengan pelayanan Central Pintu Mas."</p>
                     <div class="testi-author">
                         <div class="testi-avatar">B</div>
                         <div>
                             <div class="testi-name">Budi Santoso</div>
-                            <div class="testi-loc">Surabaya</div>
+                            <div class="testi-loc" data-i18n="testi.1.loc">Surabaya</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="testi-card aos" style="transition-delay: 0.1s;">
                     <div class="testi-stars">★★★★★</div>
-                    <p class="testi-text">"Pesan ukuran custom untuk pintu utama. Hasilnya sangat presisi, serat jatinya
+                    <p class="testi-text" data-i18n="testi.2.text">"Pesan ukuran custom untuk pintu utama. Hasilnya sangat presisi, serat jatinya
                         keluar banget dan elegan."</p>
                     <div class="testi-author">
                         <div class="testi-avatar">A</div>
                         <div>
                             <div class="testi-name">Andi Wijaya</div>
-                            <div class="testi-loc">Jakarta</div>
+                            <div class="testi-loc" data-i18n="testi.2.loc">Jakarta</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="testi-card aos" style="transition-delay: 0.2s;">
                     <div class="testi-stars">★★★★★</div>
-                    <p class="testi-text">"Awalnya ragu beli online langsung ke pengrajin, ternyata amanah. Harga jauh
+                    <p class="testi-text" data-i18n="testi.3.text">"Awalnya ragu beli online langsung ke pengrajin, ternyata amanah. Harga jauh
                         lebih masuk akal dibanding toko di kota saya."</p>
                     <div class="testi-author">
                         <div class="testi-avatar">S</div>
                         <div>
                             <div class="testi-name">Siti Aminah</div>
-                            <div class="testi-loc">Bandung</div>
+                            <div class="testi-loc" data-i18n="testi.3.loc">Bandung</div>
                         </div>
                     </div>
                 </div>
@@ -985,18 +989,19 @@
         <div class="container">
             <div class="urgency-inner">
                 <div class="aos aos-left">
-                    <h2 class="section-title" style="margin-bottom:0.5rem; color:#f0ede8;">Promo Khusus Bulan Ini!</h2>
-                    <p style="color:var(--cream2); font-size:1.1rem;">Dapatkan penawaran terbaik sebelum slot produksi
+                    <h2 class="section-title" style="margin-bottom:0.5rem; color:#f0ede8;" data-i18n="urgency.title">Promo Khusus Bulan Ini!</h2>
+                    <p style="color:var(--cream2); font-size:1.1rem;" data-i18n="urgency.sub">Dapatkan penawaran terbaik sebelum slot produksi
                         penuh.</p>
                     <div class="urgency-badges">
-                        <div class="urgency-badge"><span>🎁</span> Gratis Konsultasi & Pengukuran*</div>
-                        <div class="urgency-badge"><span>⚠️</span> Slot Terbatas Tiap Minggu</div>
-                        <div class="urgency-badge"><span>🛡️</span> Garansi Kualitas & Kerapian</div>
+                        <div class="urgency-badge"><span>🎁</span> <span data-i18n="urgency.b1">Gratis Konsultasi & Pengukuran*</span></div>
+                        <div class="urgency-badge"><span>⚠️</span> <span data-i18n="urgency.b2">Slot Terbatas Tiap Minggu</span></div>
+                        <div class="urgency-badge"><span>🛡️</span> <span data-i18n="urgency.b3">Garansi Kualitas & Kerapian</span></div>
                     </div>
                 </div>
                 <div class="aos aos-right">
                     <a href="https://wa.me/62811359671" target="_blank" class="btn-primary"
-                        style="padding:1rem 2.5rem; font-size:1.1rem; box-shadow:0 10px 40px rgba(200,149,26,0.4);">
+                        style="padding:1rem 2.5rem; font-size:1.1rem; box-shadow:0 10px 40px rgba(200,149,26,0.4);"
+                        data-i18n="urgency.cta">
                         Klaim Promo via WhatsApp
                     </a>
                 </div>
@@ -1008,29 +1013,29 @@
     <section id="faq" class="section">
         <div class="container">
             <div class="text-center aos">
-                <div class="section-tag">Tanya Jawab</div>
-                <h2 class="section-title">Pertanyaan Umum</h2>
+                <div class="section-tag" data-i18n="faq.tag">Tanya Jawab</div>
+                <h2 class="section-title" data-i18n="faq.title">Pertanyaan Umum</h2>
             </div>
 
             <div class="faq-list">
                 <div class="faq-item aos">
-                    <div class="faq-q">Apakah bisa pesan ukuran custom?</div>
-                    <div class="faq-a">Tentu saja. Kami adalah produsen langsung, sehingga ukuran, model, dan jenis
+                    <div class="faq-q" data-i18n="faq.q1">Apakah bisa pesan ukuran custom?</div>
+                    <div class="faq-a" data-i18n="faq.a1">Tentu saja. Kami adalah produsen langsung, sehingga ukuran, model, dan jenis
                         finishing bisa disesuaikan sepenuhnya dengan kebutuhan spesifik rumah Anda.</div>
                 </div>
                 <div class="faq-item aos">
-                    <div class="faq-q">Berapa lama estimasi pengerjaan?</div>
-                    <div class="faq-a">Untuk pesanan standar biasanya memakan waktu 7-14 hari kerja. Namun untuk jumlah
+                    <div class="faq-q" data-i18n="faq.q2">Berapa lama estimasi pengerjaan?</div>
+                    <div class="faq-a" data-i18n="faq.a2">Untuk pesanan standar biasanya memakan waktu 7-14 hari kerja. Namun untuk jumlah
                         besar atau desain custom yang rumit, estimasi akan kami sampaikan saat konsultasi.</div>
                 </div>
                 <div class="faq-item aos">
-                    <div class="faq-q">Apakah melayani pengiriman ke luar kota?</div>
-                    <div class="faq-a">Ya, kami melayani pengiriman ke seluruh Indonesia menggunakan kargo ekspedisi
+                    <div class="faq-q" data-i18n="faq.q3">Apakah melayani pengiriman ke luar kota?</div>
+                    <div class="faq-a" data-i18n="faq.a3">Ya, kami melayani pengiriman ke seluruh Indonesia menggunakan kargo ekspedisi
                         terpercaya yang aman dan berasuransi.</div>
                 </div>
                 <div class="faq-item aos">
-                    <div class="faq-q">Apa bedanya Jati Laminated dengan kayu solid biasa?</div>
-                    <div class="faq-a">Jati Laminated disusun dari beberapa potongan kayu jati berkualitas yang
+                    <div class="faq-q" data-i18n="faq.q4">Apa bedanya Jati Laminated dengan kayu solid biasa?</div>
+                    <div class="faq-a" data-i18n="faq.a4">Jati Laminated disusun dari beberapa potongan kayu jati berkualitas yang
                         disatukan dengan press dan lem khusus. Metode ini mematahkan urat kayu sehingga pintu jauh lebih
                         stabil, tahan cuaca, dan risiko melengkung (ngolet) menjadi sangat minim dibanding kayu solid
                         utuh.</div>
@@ -1043,11 +1048,11 @@
     <section id="cta-final" class="section">
         <div class="container">
             <div class="cta-box aos aos-scale">
-                <h2>Siap Pasang Pintu Berkualitas di Rumah Anda?</h2>
-                <p>Konsultasikan kebutuhan Anda sekarang. Tim kami siap membantu mencarikan solusi terbaik dengan harga
+                <h2 data-i18n="cta.title">Siap Pasang Pintu Berkualitas di Rumah Anda?</h2>
+                <p data-i18n="cta.text">Konsultasikan kebutuhan Anda sekarang. Tim kami siap membantu mencarikan solusi terbaik dengan harga
                     langsung dari pengrajin.</p>
                 <a href="https://wa.me/62811359671" target="_blank" class="btn-primary"
-                    style="padding:1rem 2.5rem; font-size:1.1rem;">
+                    style="padding:1rem 2.5rem; font-size:1.1rem;" data-i18n="cta.btn">
                     👉 Chat WhatsApp Sekarang
                 </a>
 
@@ -1076,7 +1081,7 @@
                             CPM
                         </div>
                     </div>
-                    <p>Berpengalaman sejak tahun 1990 dalam memproduksi komponen perumahan premium. Menggunakan bahan
+                    <p data-i18n="footer.brand">Berpengalaman sejak tahun 1990 dalam memproduksi komponen perumahan premium. Menggunakan bahan
                         baku resmi dari PERHUTANI. (Manajemen terpisah dari Kayumas/Karyamas)</p>
 
                     <div class="footer-social-cards">
@@ -1101,22 +1106,22 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h5>Tautan Cepat</h5>
+                    <h5 data-i18n="footer.q.title">Tautan Cepat</h5>
                     <ul>
-                        <li><a href="#hero">Beranda</a></li>
-                        <li><a href="#products">Koleksi Produk</a></li>
-                        <li><a href="#why">Keunggulan Kami</a></li>
-                        <li><a href="#gallery">Galeri Proyek</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#hero" data-i18n="footer.q.home">Beranda</a></li>
+                        <li><a href="#products" data-i18n="footer.q.products">Koleksi Produk</a></li>
+                        <li><a href="#why" data-i18n="footer.q.why">Keunggulan Kami</a></li>
+                        <li><a href="#gallery" data-i18n="footer.q.gallery">Galeri Proyek</a></li>
+                        <li><a href="#faq" data-i18n="footer.q.faq">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h5>Layanan</h5>
+                    <h5 data-i18n="footer.s.title">Layanan</h5>
                     <ul>
-                        <li><a href="#">Konsultasi Gratis</a></li>
-                        <li><a href="#">Custom Desain</a></li>
-                        <li><a href="#">Pengiriman Ekspedisi</a></li>
-                        <li><a href="#">Jasa Pemasangan</a></li>
+                        <li><a href="#" data-i18n="footer.s.1">Konsultasi Gratis</a></li>
+                        <li><a href="#" data-i18n="footer.s.2">Custom Desain</a></li>
+                        <li><a href="#" data-i18n="footer.s.3">Pengiriman Ekspedisi</a></li>
+                        <li><a href="#" data-i18n="footer.s.4">Jasa Pemasangan</a></li>
                     </ul>
                 </div>
             </div>
@@ -1124,14 +1129,14 @@
                 <p>Copyright &copy; <span id="current-year"></span> Central Pintu Mas | Website by <a
                         href="https://www.cvsatriateknologi.com/" target="_blank"
                         style="color: var(--gold); text-decoration: underline;">Satria Teknologi</a></p>
-                <p>Desain Premium untuk Hunian Eksklusif.</p>
+                <p data-i18n="footer.tagline">Desain Premium untuk Hunian Eksklusif.</p>
             </div>
         </div>
     </footer>
 
     <!-- FLOATING WA BUTTON -->
     <a href="https://wa.me/62811359671" target="_blank" id="wa-float">
-        <div class="wa-tooltip">Ada pertanyaan? Chat kami</div>
+        <div class="wa-tooltip" data-i18n="wa.tooltip">Ada pertanyaan? Chat kami</div>
         <div class="wa-btn">
             <svg viewBox="0 0 24 24">
                 <path
