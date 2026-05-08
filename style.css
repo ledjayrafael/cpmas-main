@@ -383,7 +383,7 @@ footer{background:#080807;border-top:1px solid rgba(200,149,26,0.1);padding:3rem
   .nav-links,.nav-right{display:none}
   .nav-burger{display:flex}
   .section{padding:4rem 0}
-  #hero{padding-top:110px;padding-bottom:60px;align-items:flex-start}
+  #hero{height:auto;min-height:100vh;padding-top:110px;padding-bottom:60px;align-items:flex-start}
   .hero-content{padding:0 1.5rem}
   .gallery-grid{grid-template-columns:1fr}
   .gallery-item:nth-child(1){grid-column:span 1}
